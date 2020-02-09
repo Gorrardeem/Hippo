@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenScript : MonoBehaviour
 {
+    public AudioSource backgroundMusic;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        DontDestroyOnLoad(this.backgroundMusic);
+
     }
 
     // Update is called once per frame
